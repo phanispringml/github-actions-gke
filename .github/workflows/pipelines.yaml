@@ -12,7 +12,7 @@ env:
   GKE_ZONE: us-central1
   DEPLOYMENT_NAME: github-actions-gke
   IMAGE: github-actions-gke-image
-  TAG: latest
+  TAG: ${{ github.sha }}
 
 jobs:
   setup-build-publish-deploy:
